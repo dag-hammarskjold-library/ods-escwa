@@ -19,8 +19,6 @@ while (<$ods>) {
 	my $sym = $row[0];
 	$sym =~ s/"//g;
 	$ods{$sym} = 1;
-	#print @row if $sym eq 'E/ESCWA/ED/2002/1';
-	say $sym;
 	if ($esc{$sym}) {
 		say $out1 join "\t", $esc{$sym}, $sym, 'IN DLS';
 	} else {
