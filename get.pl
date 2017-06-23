@@ -1,0 +1,117 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use feature 'say';
+
+package main;
+use Data::Dumper;
+$Data::Dumper::Indent = 1;
+use Getopt::Std;
+use WWW::Mechanize;
+use WWW::Mechanize::Plugin::FollowMetaRedirect;
+
+use constant LANG => {
+	AR => 'A',
+	ZH => 'C',
+	EN => 'E',
+	FR => 'F',
+	RU => 'R',
+	ES => 'S',
+	DE => 'O'
+};
+
+RUN: {
+	$| = 1;
+	MAIN(options());
+}
+
+sub options {
+	my $opts = {
+		'h' => 'help',
+		'i:' => 'ods file (path)',
+		'd:' => 'save directory'
+	};
+	getopts ((join '',keys %$opts), \my %opts);
+	if ($opts{h}) {
+		say "$_ - $opts->{$_}" for keys %$opts;
+		exit; 
+	}
+	return \%opts;
+}
+
+sub MAIN {
+	my $opts = shift;
+	
+	my $mech = WWW::Mechanize->new ( 
+		agent => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+		cookie_jar => {},
+		timeout => 10,
+		autocheck => 0,
+		stack_depth => 5
+	);
+	
+	open my $ods,'<',$opts->{i};
+	my %seen;
+	while (<$ods>) {
+		chomp;
+		my @row = split "\t", $_;
+		my @langs = grep {defined($_)} @row[3..10] if $row[3];
+		next if $langs[0] eq 'NONE';
+		$seen{$row[1]}++ if $row[1] ne 'NOT IN DLS';
+		next if $seen{$row[1]} and $seen{$row[1]} > 1;
+		my $sym = $row[0];
+		for my $lang (@langs) {
+			my $sdir = $row[1] if $row[1] ne 'NOT IN DLS';
+			$sdir ||= 'temp_id_'.$.;
+			my $save = join '/', $opts->{d}, $sdir, encode_fn([$sym],$lang);
+			next if -e $save;
+			mkdir $opts->{d}.'/'.$sdir; 
+			my $url = 'http://daccess-ods.un.org/access.nsf/Get?Open&DS='.$row[0].'&Lang='.LANG->{$lang};
+			print "$url\t";
+			download($mech,$url,$save);
+			print "\n";
+		}
+		
+	}
+}
+
+sub encode_fn {
+	my ($syms,$lang) = @_;
+	$lang ||= '';
+	tr/\/\*/_!/ for @$syms;
+	return join(';',sort @$syms)."-$lang.pdf";
+}
+
+sub download {
+	my ($mech,$url,$save) = @_;
+	#local $| = 1;
+	print "navigating ODS... ";
+	my $response = $mech->get($url);
+	print "no response" and return if ! $response;
+	$response = $mech->follow_link(url_regex => qr/TMP/);
+	$response = $mech->follow_link(tag => q/frame/);
+	$mech->back;
+	print "downloading... ";
+	$response = $mech->follow_meta_redirect;
+	$mech->save_content("$save", binmode => ':utf8');
+	print qq/save failed/
+		and unlink $save 
+		and return 
+			unless is_pdf("$save");
+	print "OK";
+	return 1;
+}
+
+sub is_pdf {
+	my $path = shift;	
+	open my $check,"<",$path;
+	while (<$check>) {
+		return 1 if index($_,'%PDF') > 0;
+		return 1 if $_ =~ /\%pdf/i;
+		last if $. > 1;	
+	}
+	return 0;
+}
+
+__END__
