@@ -53,7 +53,9 @@ sub MAIN {
 	
 	open my $ods,'<',$opts->{i};
 	my %seen;
+	my $c;
 	while (<$ods>) {
+		$c++;
 		chomp;
 		my @row = split "\t", $_;
 		my @langs = grep {defined($_)} @row[3..10] if $row[3];
@@ -62,13 +64,17 @@ sub MAIN {
 		next if $seen{$row[1]} and $seen{$row[1]} > 1;
 		my $sym = $row[0];
 		for my $lang (@langs) {
-			my $sdir = $row[1] if $row[1] ne 'NOT IN DLS';
-			$sdir ||= 'temp_id_'.$.;
+			my $sdir;
+			if ($row[1] eq 'NOT IN DLS') {
+				$sdir = 'temp_id_'.$.;
+			} else {
+				$sdir = $row[1];
+			}
 			my $save = join '/', $opts->{d}, $sdir, encode_fn([$sym],$lang);
 			next if -e $save;
 			mkdir $opts->{d}.'/'.$sdir; 
 			my $url = 'http://daccess-ods.un.org/access.nsf/Get?Open&DS='.$row[0].'&Lang='.LANG->{$lang};
-			print "$url\t";
+			print "$save\t";
 			download($mech,$url,$save);
 			print "\n";
 		}
@@ -94,7 +100,7 @@ sub download {
 	$mech->back;
 	print "downloading... ";
 	$response = $mech->follow_meta_redirect;
-	$mech->save_content("$save", binmode => ':utf8');
+	$mech->save_content($save); #, binmode => ':utf8');
 	print qq/save failed/
 		and unlink $save 
 		and return 
