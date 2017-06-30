@@ -4,14 +4,16 @@ use feature 'say';
 use Data::Dumper;
 
 use constant LANG => {
-	1 => 'EN',
-	2 => 'FR',
-	3 => 'AR',
-	4 => 'ZH',
+	1 => 'AR',
+	2 => 'ZH',
+	3 => 'EN',
+	4 => 'FR',
 	5 => 'RU',
 	6 => 'ES',
 	7 => 'DE'
 };
+
+
 
 open my $ods,'<',$ARGV[0];
 open my $dls,'<',$ARGV[1];
@@ -36,12 +38,12 @@ while (<$ods>) {
 	my $sym = $row[0];
 	my $match = ds($sym);
 	$ods{$match} = 1;
+	my %ods_langs;
 	if ($dls{$match}) {
 		print $out1 join "\t", $sym, $dls{$match}{dls_id};
 		my $dls_files = $dls{$match}{files};
 		my %dls_langs;
 		$dls_langs{substr($_,-6,2)} = 1 for grep {$_ =~ /\w/} @$dls_files;
-		my %ods_langs;
 		for (1..7) {
 			$ods_langs{LANG->{$_}} = 1 if $row[$_];
 		}
@@ -49,7 +51,11 @@ while (<$ods>) {
 		$missing[0] ||= 'NONE';
 		say $out1 "\t".join "\t", 'missing files:', @missing;
 	} else {
-		say $out1 join "\t", $sym, 'NOT IN DLS';
+		print $out1 join "\t", $sym, 'NOT IN DLS';
+		for (1..7) {
+			$ods_langs{LANG->{$_}} = 1 if $row[$_];
+		}
+		say $out1 "\t".join "\t", 'missing files:', keys %ods_langs;
 	}
 }
 open my $out2,'>','in_dls.tsv';
