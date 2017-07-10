@@ -37,6 +37,7 @@ while (<$ods>) {
 	$_ =~ s/"//g for @row;
 	my $sym = $row[0];
 	my $match = ds($sym);
+	say $match;
 	$ods{$match} = 1;
 	my %ods_langs;
 	if ($dls{$match}) {
@@ -49,13 +50,13 @@ while (<$ods>) {
 		}
 		my @missing = grep {! $dls_langs{$_}} keys %ods_langs;
 		$missing[0] ||= 'NONE';
-		say $out1 "\t".join "\t", 'missing files:', @missing;
+		say $out1 "\t".join "\t", 'missing files:', sort @missing;
 	} else {
 		print $out1 join "\t", $sym, 'NOT IN DLS';
 		for (1..7) {
 			$ods_langs{LANG->{$_}} = 1 if $row[$_];
 		}
-		say $out1 "\t".join "\t", 'missing files:', keys %ods_langs;
+		say $out1 "\t".join "\t", 'missing files:', sort keys %ods_langs;
 	}
 }
 open my $out2,'>','in_dls.tsv';
@@ -69,7 +70,9 @@ for my $match (keys %dls) {
 
 sub ds {
 	my $sym = shift;
-	$sym = lc $sym;
 	$sym =~ s/ //g;
+	$sym =~ s|/$||;
+	$sym =~ s|\(A\)||;
+	$sym = lc $sym;
 	return $sym;
 }
