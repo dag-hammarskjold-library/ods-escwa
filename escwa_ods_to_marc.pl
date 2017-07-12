@@ -126,13 +126,7 @@ sub MAIN {
 		my $record = MARC::Record->new;
 		my @fields = split "\n", $_;
 		for (@fields) {
-			#$_ = encode('utf-8',decode('utf-8',$_));
 			my ($key,$val) = ($1,$2) if $_ =~ /(.*?): *(.*)/;
-			#say $val;
-			#for (split '', $val) {
-				#print sprintf "%X", (ord $_);
-			#}
-			#print "\n";
 			if ($key && $val && grep {$_ eq $key} keys %take) {
 				$take{$key}->($record,$val,$opts);
 			}
@@ -146,13 +140,7 @@ sub MAIN {
 				{AR=>'العربية',ZH=>'中文',EN=>'English',FR=>'Français',RU=>'Русский',ES=>'Español',DE=>'Other'}->{substr $_,-6,2},
 			);
 			my $newfn = (split /\//,$_)[-1];
-			$newfn = (split /;/, $newfn)[0];
-			$newfn =~ s/\.pdf//;
-			$newfn =~ s/\s//;
-			$newfn =~ tr/./-/;
-			$newfn .= '.pdf';
-			$field->set_sub('n',$newfn);
-			$record->add_field($field);
+			$newfn = dls_fn($_);
 		}
 		if (! $in_dls->{$symbol}) {
 			print {$new_recs} $record->to_xml;
@@ -169,6 +157,7 @@ sub _191 {
 	my ($record,$val) = @_;
 	for (split /,/, $val) {
 		my $field = MARC::Field->new(tag => '191');
+		$_ =~ s/\([ACEFRSO]\)$//;
 		$field->set_sub('a',$_);
 		$record->add_field($field);
 	}
@@ -207,6 +196,17 @@ sub _650 {
 		$field->set_sub('0','(DHLAUTH)'.$auth);
 		$record->add_field($field);
 	}
+}
+
+sub dls_fn {
+	my $str = shift;
+	my $newfn = (split /\//,$str)[-1];
+	$newfn = (split /;/, $newfn)[0];
+	$newfn =~ s/\.pdf//;
+	$newfn =~ s/\s//;
+	$newfn =~ tr/./-/;
+	$newfn .= '.pdf';
+	return $newfn;
 }
 
 __END__
