@@ -83,8 +83,8 @@ RUN: {
 sub options {
 	my $opts = {
 		'h' => 'help',
-		'3:' => 's3 file (path)',
-		'o:' => 'ods file'
+		#'3:' => 's3 file (path)',
+		#'o:' => 'ods file'
 	};
 	getopts ((join '',keys %$opts), \my %opts);
 	if ($opts{h}) {
@@ -118,7 +118,7 @@ sub MAIN {
 	open my $new_recs,'>:utf8','new.xml';
 	open my $update_recs,'>:utf8','update.xml';
 	say {$_} '<collection>' for $new_recs,$update_recs;
-	open my $ods,'<:utf8',$opts->{o};
+	open my $ods,'<:utf8','EESCWAST';
 	$/ = "\x{C}";
 	while (<$ods>) {
 		chomp;
@@ -141,6 +141,8 @@ sub MAIN {
 			);
 			my $newfn = (split /\//,$_)[-1];
 			$newfn = dls_fn($_);
+			$field->set_sub('n',$newfn);
+			$record->add_field($field);
 		}
 		if (! $in_dls->{$symbol}) {
 			print {$new_recs} $record->to_xml;
