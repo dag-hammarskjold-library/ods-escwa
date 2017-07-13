@@ -42,6 +42,7 @@ has 'data', is => 'ro', default => sub {
 		my $lang = substr $key,-6,2;
 		my $sym = substr((split m|/|, $key)[-1], 0, -7);
 		$sym =~ tr/_*/\/!/;
+		#say $_ if $sym eq 'E/ESCWA/80/ADD.1';
 		push @{$data{$sym}}, $key;
 	}
 	return \%data;
@@ -120,6 +121,7 @@ sub MAIN {
 	say {$_} '<collection>' for $new_recs,$update_recs;
 	open my $ods,'<:utf8','EESCWAST';
 	$/ = "\x{C}";
+	my %seen;
 	while (<$ods>) {
 		chomp;
 		s/[\x{0}\x{1B}]//g;
@@ -132,7 +134,11 @@ sub MAIN {
 			}
 		}
 		my $symbol = $record->get_field_sub('191','a');
+		next if $seen{$symbol};
+		$seen{$symbol}++;
+		#say join "\t", $symbol, $seen{$symbol};
 		for (@{$s3->{$symbol}}) {
+			#print Dumper $s3->{$symbol} if $symbol eq 'E/ESCWA/80/ADD.1';
 			my $field = MARC::Field->new(tag => 'FFT');
 			$field->set_sub('a','http://undhl-dgacm.s3.amazonaws.com/'.uri_escape($_));
 			$field->set_sub (
@@ -160,6 +166,7 @@ sub _191 {
 	for (split /,/, $val) {
 		my $field = MARC::Field->new(tag => '191');
 		$_ =~ s/\([ACEFRSO]\)$//;
+		$_ =~ s/\(SUPP\)$//;
 		$field->set_sub('a',$_);
 		$record->add_field($field);
 	}
