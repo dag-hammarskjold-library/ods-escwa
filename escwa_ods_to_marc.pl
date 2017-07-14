@@ -136,9 +136,7 @@ sub MAIN {
 		my $symbol = $record->get_field_sub('191','a');
 		next if $seen{$symbol};
 		$seen{$symbol}++;
-		#say join "\t", $symbol, $seen{$symbol};
 		for (@{$s3->{$symbol}}) {
-			#print Dumper $s3->{$symbol} if $symbol eq 'E/ESCWA/80/ADD.1';
 			my $field = MARC::Field->new(tag => 'FFT');
 			$field->set_sub('a','http://undhl-dgacm.s3.amazonaws.com/'.uri_escape($_));
 			$field->set_sub (
@@ -154,6 +152,7 @@ sub MAIN {
 			print {$new_recs} $record->to_xml;
 		} else {
 			$record->delete_tag($_) for qw/191 245 269 650/;
+			next unless $record->field_count;
 			$record->id($in_dls->{$symbol});
 			print {$update_recs} $record->to_xml;
 		}
