@@ -60,20 +60,22 @@ sub MAIN {
 		my @row = split "\t", $_;
 		my @langs = grep {defined($_)} @row[3..10] if $row[3];
 		next if $langs[0] eq 'NONE';
-		$seen{$row[1]}++ if $row[1] ne 'NOT IN DLS';
-		next if $seen{$row[1]} and $seen{$row[1]} > 1;
-		my $sym = $row[0];
+		my ($sym,$id) = @row[0,1];
+		$seen{$id}++ if $id ne 'NOT IN DLS';
+		#next if $seen{$id} and $seen{$id} > 1;
+		#next unless $sym =~ '^E/ESCWA/16/8'; # SUPPL.1';
+		#next unless $. >= 170 and $. <= 200;
 		for my $lang (@langs) {
 			my $sdir;
-			if ($row[1] eq 'NOT IN DLS') {
+			if ($id eq 'NOT IN DLS') {
 				$sdir = 'temp_id_'.$.;
 			} else {
-				$sdir = $row[1];
+				$sdir = $id;
 			}
 			my $save = join '/', $opts->{d}, $sdir, encode_fn([$sym],$lang);
 			next if -e $save;
 			mkdir $opts->{d}.'/'.$sdir; 
-			my $url = 'http://daccess-ods.un.org/access.nsf/Get?Open&DS='.$row[0].'&Lang='.LANG->{$lang};
+			my $url = 'http://daccess-ods.un.org/access.nsf/Get?Open&DS='.$sym.'&Lang='.LANG->{$lang};
 			print "$save\t";
 			download($mech,$url,$save);
 			print "\n";
@@ -106,6 +108,7 @@ sub download {
 		and return 
 			unless is_pdf("$save");
 	print "OK";
+	$mech->get('https://documents.un.org');
 	return 1;
 }
 
