@@ -122,6 +122,7 @@ sub MAIN {
 	open my $ods,'<:utf8','EESCWAST';
 	$/ = "\x{C}";
 	my %seen;
+	my $c;
 	while (<$ods>) {
 		chomp;
 		s/[\x{0}\x{1B}]//g;
@@ -149,6 +150,12 @@ sub MAIN {
 			$record->add_field($field);
 		}
 		if (! $in_dls->{$symbol}) {
+			if (! $record->field_count('245')) {
+				$c++;
+				for ($record->fields) {
+					$_->change_tag('245') and last if $_->tag eq '246';
+				}
+			}
 			print {$new_recs} $record->to_xml;
 		} else {
 			$record->delete_tag($_) for qw/191 245 269 650/;
@@ -157,6 +164,7 @@ sub MAIN {
 			print {$update_recs} $record->to_xml;
 		}
 	}
+	say $c;
 	say {$_} '</collection>' for $new_recs,$update_recs;
 }
 
