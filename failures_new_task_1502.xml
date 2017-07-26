@@ -12,8 +12,6 @@
 <!ATTLIST subfield code CDATA ""> ]>
 <collection>
 <record>
-  <!-- failure reason: duplicate filenames in FFT -->
-  <controlfield tag="001">1286521</controlfield>
   <datafield tag="191" ind1=" " ind2=" ">
     <subfield code="a">E/ESCWA/HS/1993/3</subfield>
   </datafield>
@@ -78,8 +76,6 @@
   </datafield>
 </record>
 <record>
-  <!-- failure reason: duplicate filenames in FFT -->
-  <controlfield tag="001">1286662</controlfield>
   <datafield tag="191" ind1=" " ind2=" ">
     <subfield code="a">E/ESCWA/ID/88/5</subfield>
   </datafield>
@@ -101,8 +97,6 @@
   </datafield>
 </record>
 <record>
-  <!-- failure reason: duplicate filenames in FFT -->
-  <controlfield tag="001">1287040</controlfield>
   <datafield tag="191" ind1=" " ind2=" ">
     <subfield code="a">E/ESCWA/SD/1990/1</subfield>
   </datafield>
@@ -151,8 +145,6 @@
   </datafield>
 </record>
 <record>
-  <!-- failure reason: duplicate filenames in FFT -->
-  <controlfield tag="001">1287102</controlfield>
   <datafield tag="191" ind1=" " ind2=" ">
     <subfield code="a">E/ESCWA/SD/2002/5</subfield>
   </datafield>
@@ -221,8 +213,6 @@
   </datafield>
 </record>
 <record>
-  <!-- failure reason: duplicate filenames in FFT -->
-  <controlfield tag="001">1287233</controlfield>
   <datafield tag="191" ind1=" " ind2=" ">
     <subfield code="a">E/ESCWA/STAT/1995/13</subfield>
   </datafield>
@@ -275,8 +265,6 @@
   </datafield>
 </record>
 <record>
-  <!-- failure reason: duplicate filenames in FFT -->
-  <controlfield tag="001">1287235</controlfield>
   <datafield tag="191" ind1=" " ind2=" ">
     <subfield code="a">E/ESCWA/STAT/1995/16</subfield>
   </datafield>
@@ -290,8 +278,6 @@
   </datafield>
 </record>
 <record>
-  <!-- failure reason: duplicate filenames in FFT -->
-  <controlfield tag="001">1287236</controlfield>
   <datafield tag="191" ind1=" " ind2=" ">
     <subfield code="a">E/ESCWA/STAT/1995/17</subfield>
   </datafield>
@@ -328,8 +314,6 @@
   </datafield>
 </record>
 <record>
-  <!-- failure reason: duplicate filenames in FFT -->
-  <controlfield tag="001">1287237</controlfield>
   <datafield tag="191" ind1=" " ind2=" ">
     <subfield code="a">E/ESCWA/STAT/1995/18</subfield>
   </datafield>
