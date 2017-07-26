@@ -278,11 +278,6 @@
     <subfield code="d">العربية</subfield>
     <subfield code="n">E_ESCWA_STAT_1995_13-AR.pdf</subfield>
   </datafield>
-  <datafield tag="FFT" ind1=" " ind2=" ">
-    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4997%2FE_ESCWA_STAT_1995_13-AR.pdf</subfield>
-    <subfield code="d">العربية</subfield>
-    <subfield code="n">E_ESCWA_STAT_1995_13-AR.pdf</subfield>
-  </datafield>
 </record>
 <record>
   <!-- failure reason: duplicate filenames in FFT -->
