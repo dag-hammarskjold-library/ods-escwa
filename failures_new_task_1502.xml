@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE marc [
+<!ELEMENT collection (record*)>
+<!ATTLIST collection xmlns CDATA "">
+<!ELEMENT record (leader,controlfield+,datafield+)>
+<!ELEMENT leader (#PCDATA)>
+<!ELEMENT controlfield (#PCDATA)>
+<!ATTLIST controlfield tag CDATA "">
+<!ELEMENT datafield (subfield+)>
+<!ATTLIST datafield tag CDATA "" ind1 CDATA "" ind2 CDATA "">
+<!ELEMENT subfield (#PCDATA)>
+<!ATTLIST subfield code CDATA ""> ]>
+<collection>
+<record>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="a">E/ESCWA/HS/1993/3</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">الاسكان والخدمات الاساسية في المناطق الحضرية السريعة التغير اسكان الازمات</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">19931103</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">URBAN HOUSING</subfield>
+    <subfield code="0">(DHLAUTH)273582</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">POPULATION GROWTH</subfield>
+    <subfield code="0">(DHLAUTH)272944</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">CITIES</subfield>
+    <subfield code="0">(DHLAUTH)273527</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">SOCIAL CONDITIONS</subfield>
+    <subfield code="0">(DHLAUTH)268327</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">ECONOMIC CONDITIONS</subfield>
+    <subfield code="0">(DHLAUTH)269719</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">CONFERENCES</subfield>
+    <subfield code="0">(DHLAUTH)275758</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">WESTERN ASIA</subfield>
+    <subfield code="0">(DHLAUTH)275490</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">AMMAN (JORDAN)</subfield>
+    <subfield code="0">(DHLAUTH)276766</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">SYRIAN ARAB REPUBLIC</subfield>
+    <subfield code="0">(DHLAUTH)273496</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">SANA'A (YEMEN)</subfield>
+    <subfield code="0">(DHLAUTH)584060</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">CAIRO (EGYPT)</subfield>
+    <subfield code="0">(DHLAUTH)276878</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">ARAB COUNTRIES</subfield>
+    <subfield code="0">(DHLAUTH)268705</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_2382%2FE_ESCWA_HS_1993_3-AR.pdf</subfield>
+    <subfield code="d">العربية</subfield>
+    <subfield code="n">E_ESCWA_HS_1993_3-AR.pdf</subfield>
+  </datafield>
+</record>
+<record>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="a">E/ESCWA/ID/88/5</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">تقرير عن المهمة الاستشارية لدعم الصناعات القائمة في جمهورية مصر العربية خلال الفترة من 9-15 تموز/يوليو 1988</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">19880726</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_2890%2FE_ESCWA_ID_88_5-AR.pdf</subfield>
+    <subfield code="d">العربية</subfield>
+    <subfield code="n">E_ESCWA_ID_88_5-AR.pdf</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_2891%2FE_ESCWA_ID_88_5-EN.pdf</subfield>
+    <subfield code="d">English</subfield>
+    <subfield code="n">E_ESCWA_ID_88_5-EN.pdf</subfield>
+  </datafield>
+</record>
+<record>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="a">E/ESCWA/SD/1990/1</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">MISSION REPORT TO JORDAN 20 JANUARY - 1 FEBRUARY 1990</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">19900329</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">ADVISORY SERVICES</subfield>
+    <subfield code="0">(DHLAUTH)269860</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">JORDAN</subfield>
+    <subfield code="0">(DHLAUTH)269099</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">TECHNICAL COOPERATION</subfield>
+    <subfield code="0">(DHLAUTH)268658</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">SOCIAL INSTITUTIONS</subfield>
+    <subfield code="0">(DHLAUTH)269950</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">WOMEN</subfield>
+    <subfield code="0">(DHLAUTH)273032</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">FAMILY INCOME</subfield>
+    <subfield code="0">(DHLAUTH)269804</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">DEVELOPMENT PROJECTS</subfield>
+    <subfield code="0">(DHLAUTH)444783</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">WESTERN ASIA</subfield>
+    <subfield code="0">(DHLAUTH)275490</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4516%2FE_ESCWA_SD_1990_1-EN.pdf</subfield>
+    <subfield code="d">English</subfield>
+    <subfield code="n">E_ESCWA_SD_1990_1-EN.pdf</subfield>
+  </datafield>
+</record>
+<record>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="a">E/ESCWA/SD/2002/5</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">MODELES DE POLITIQUES SOCIALE: LES ENSEIGNEMENTS DE L'EXPERIENCE TUNISIENNE</subfield>
+  </datafield>
+  <datafield tag="246" ind1=" " ind2=" ">
+    <subfield code="a">نماذج السياسات الاجتماعية : التجربة التونسية ودلالاتها </subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">20020410</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">SOCIAL POLICY</subfield>
+    <subfield code="0">(DHLAUTH)269713</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">HEALTH</subfield>
+    <subfield code="0">(DHLAUTH)273713</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">EDUCATION</subfield>
+    <subfield code="0">(DHLAUTH)268926</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">STRUCTURAL ADJUSTMENT</subfield>
+    <subfield code="0">(DHLAUTH)269790</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">GLOBALIZATION</subfield>
+    <subfield code="0">(DHLAUTH)276685</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">POPULATION POLICY</subfield>
+    <subfield code="0">(DHLAUTH)269905</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">WOMEN</subfield>
+    <subfield code="0">(DHLAUTH)273032</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">EMPLOYMENT</subfield>
+    <subfield code="0">(DHLAUTH)269797</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">POVERTY MITIGATION</subfield>
+    <subfield code="0">(DHLAUTH)274700</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">TUNISIA</subfield>
+    <subfield code="0">(DHLAUTH)273507</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">WESTERN ASIA</subfield>
+    <subfield code="0">(DHLAUTH)275490</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4669%2FE_ESCWA_SD_2002_5-AR.pdf</subfield>
+    <subfield code="d">العربية</subfield>
+    <subfield code="n">E_ESCWA_SD_2002_5-AR.pdf</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4669%2FE_ESCWA_SD_2002_5-FR.pdf</subfield>
+    <subfield code="d">Français</subfield>
+    <subfield code="n">E_ESCWA_SD_2002_5-FR.pdf</subfield>
+  </datafield>
+</record>
+<record>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="a">E/ESCWA/STAT/1995/13</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">تقرير عن المهمة الاستشارية الى قسم الاحصاء بكلية الاقتصاد والعلوم السياسية جامعة القاهرة الجيزة - جمهورية مصر العربية خلال الفترة من 5 - 11 تموز /يوليو 1995</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">19950815</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">ADVISORY SERVICES</subfield>
+    <subfield code="0">(DHLAUTH)269860</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">WESTERN ASIA</subfield>
+    <subfield code="0">(DHLAUTH)275490</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">STATISTICAL SERVICES</subfield>
+    <subfield code="0">(DHLAUTH)270225</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">TECHNICAL TRAINING</subfield>
+    <subfield code="0">(DHLAUTH)271971</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">STUDENTS</subfield>
+    <subfield code="0">(DHLAUTH)274118</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">PARTICIPANTS</subfield>
+    <subfield code="0">(DHLAUTH)275785</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">COMPUTERS</subfield>
+    <subfield code="0">(DHLAUTH)271865</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">GEOGRAPHIC INFORMATION SYSTEMS</subfield>
+    <subfield code="0">(DHLAUTH)270489</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">EGYPT</subfield>
+    <subfield code="0">(DHLAUTH)273328</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4995%2FE_ESCWA_STAT_1995_13-AR.pdf</subfield>
+    <subfield code="d">العربية</subfield>
+    <subfield code="n">E_ESCWA_STAT_1995_13-AR.pdf</subfield>
+  </datafield>
+</record>
+<record>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="a">E/ESCWA/STAT/1995/16</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">19950201</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5000%2FE_ESCWA_STAT_1995_16-AR.pdf</subfield>
+    <subfield code="d">العربية</subfield>
+    <subfield code="n">E_ESCWA_STAT_1995_16-AR.pdf</subfield>
+  </datafield>
+</record>
+<record>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="a">E/ESCWA/STAT/1995/17</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">تقرير عن المهمة الاستشارية الى الجهاز المركزي للتعبئة العامة والاحصاء جمهورية مصر العربية خلال الفترة من 10-25 ايلول /سبتمبر 1995 </subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">19951018</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">WESTERN ASIA</subfield>
+    <subfield code="0">(DHLAUTH)275490</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">ADVISORY SERVICES</subfield>
+    <subfield code="0">(DHLAUTH)269860</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">TECHNICAL TRAINING</subfield>
+    <subfield code="0">(DHLAUTH)271971</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">NATIONAL ACCOUNTS</subfield>
+    <subfield code="0">(DHLAUTH)269651</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">EGYPT</subfield>
+    <subfield code="0">(DHLAUTH)273328</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5003%2FE_ESCWA_STAT_1995_17-AR.pdf</subfield>
+    <subfield code="d">العربية</subfield>
+    <subfield code="n">E_ESCWA_STAT_1995_17-AR.pdf</subfield>
+  </datafield>
+</record>
+<record>
+  <datafield tag="191" ind1=" " ind2=" ">
+    <subfield code="a">E/ESCWA/STAT/1995/18</subfield>
+  </datafield>
+  <datafield tag="245" ind1=" " ind2=" ">
+    <subfield code="a">تقرير عن المهمة الاستشارية الى الجهاز المركزي للاحصاء صنعاء الجمهورية العربية اليمنية خلال الفترة من 3 - 11 آب  /اغسطس 1995</subfield>
+  </datafield>
+  <datafield tag="269" ind1=" " ind2=" ">
+    <subfield code="a">19951019</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">WESTERN ASIA</subfield>
+    <subfield code="0">(DHLAUTH)275490</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">ADVISORY SERVICES</subfield>
+    <subfield code="0">(DHLAUTH)269860</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">INDEX NUMBERS</subfield>
+    <subfield code="0">(DHLAUTH)269641</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">FAMILY INCOME</subfield>
+    <subfield code="0">(DHLAUTH)269804</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">HOUSEHOLD EXPENDITURES</subfield>
+    <subfield code="0">(DHLAUTH)269741</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">BALANCE OF PAYMENTS</subfield>
+    <subfield code="0">(DHLAUTH)270325</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">NATIONAL ACCOUNTS</subfield>
+    <subfield code="0">(DHLAUTH)269651</subfield>
+  </datafield>
+  <datafield tag="650" ind1=" " ind2=" ">
+    <subfield code="a">CONFERENCES</subfield>
+    <subfield code="0">(DHLAUTH)275758</subfield>
+  </datafield>
+  <datafield tag="FFT" ind1=" " ind2=" ">
+    <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5006%2FE_ESCWA_STAT_1995_18-AR.pdf</subfield>
+    <subfield code="d">العربية</subfield>
+    <subfield code="n">E_ESCWA_STAT_1995_18-AR.pdf</subfield>
+  </datafield>
+</record>
+</collection>

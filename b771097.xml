@@ -1,0 +1,18 @@
+﻿<collection>
+<record>
+    <controlfield tag="001">771097</controlfield>
+    <datafield tag="246" ind1=" " ind2=" ">
+        <subfield code="a">اللجنة الاقتصادية والاجتماعية لغربي آسيا : التقرير السنوي لعام 2012 : الطريق الى المستقبل</subfield>
+    </datafield>
+    <datafield tag="FFT" ind1=" " ind2=" ">
+        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2F771097%2FE_ESCWA_OES_2013_1-AR.pdf</subfield>
+        <subfield code="d">العربية</subfield>
+        <subfield code="n">E_ESCWA_OES_2013_1-AR.pdf</subfield>
+    </datafield>
+    <datafield tag="FFT" ind1=" " ind2=" ">
+        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2F771097%2FE_ESCWA_OES_2013_1-EN.pdf</subfield>
+        <subfield code="d">English</subfield>
+        <subfield code="n">E_ESCWA_OES_2013_1-EN.pdf</subfield>
+    </datafield>
+</record>
+</collection>

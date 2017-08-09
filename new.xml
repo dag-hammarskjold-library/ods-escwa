@@ -1,65 +1,6 @@
 <collection>
 <record>
     <datafield tag="191" ind1=" " ind2=" ">
-        <subfield code="a">E/1999/41</subfield>
-    </datafield>
-    <datafield tag="191" ind1=" " ind2=" ">
-        <subfield code="a">E/ESCWA/20/9</subfield>
-    </datafield>
-    <datafield tag="245" ind1=" " ind2=" ">
-        <subfield code="a">REPORT OF THE TWENTIETH SESSION: 27-28 MAY 1999 ECONOMIC AND SOCIAL COUNCIL OFFICIAL RECORDS 1999 SUPPLEMENT NO.21</subfield>
-    </datafield>
-    <datafield tag="246" ind1=" " ind2=" ">
-        <subfield code="a">تقرير الدورة العشرين 27-28 ايار 1999</subfield>
-    </datafield>
-    <datafield tag="269" ind1=" " ind2=" ">
-        <subfield code="a">19990528</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">PERIODIC REPORTS</subfield>
-        <subfield code="0">(DHLAUTH)275135</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">RESOLUTIONS AND DECISIONS</subfield>
-        <subfield code="0">(DHLAUTH)275677</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">WORK ORGANIZATION</subfield>
-        <subfield code="0">(DHLAUTH)275746</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">PARTICIPANTS</subfield>
-        <subfield code="0">(DHLAUTH)275785</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">PUBLICATIONS</subfield>
-        <subfield code="0">(DHLAUTH)270013</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">ARAB COUNTRIES</subfield>
-        <subfield code="0">(DHLAUTH)268705</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">WORK PROGRAMME</subfield>
-        <subfield code="0">(DHLAUTH)275800</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">ACTIVITIES</subfield>
-        <subfield code="0">(DHLAUTH)275823</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5%2FE_1999_41-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_1999_41-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5%2FE_1999_41-EN.pdf</subfield>
-        <subfield code="d">English</subfield>
-        <subfield code="n">E_1999_41-EN.pdf</subfield>
-    </datafield>
-</record>
-<record>
-    <datafield tag="191" ind1=" " ind2=" ">
         <subfield code="a">E/1999/41/REV.1</subfield>
     </datafield>
     <datafield tag="191" ind1=" " ind2=" ">
@@ -93,81 +34,6 @@
     <datafield tag="650" ind1=" " ind2=" ">
         <subfield code="a">DOCUMENTS</subfield>
         <subfield code="0">(DHLAUTH)270014</subfield>
-    </datafield>
-</record>
-<record>
-    <datafield tag="191" ind1=" " ind2=" ">
-        <subfield code="a">E/2016/41</subfield>
-    </datafield>
-    <datafield tag="191" ind1=" " ind2=" ">
-        <subfield code="a">E/ESCWA/29/12/REPORT</subfield>
-    </datafield>
-    <datafield tag="245" ind1=" " ind2=" ">
-        <subfield code="a">ECONOMIC AND SOCIAL COMMISSION FOR WESTERN ASIA, REPORT OF THE TWENTY-NINTH SESSION, 13-15 DECEMBER 2016 : ECONOMIC AND SOCIAL COUNCIL : OFFICIAL RECORDS : 2016 : SUPPLEMENT NO. 21</subfield>
-    </datafield>
-    <datafield tag="246" ind1=" " ind2=" ">
-        <subfield code="a">COMMISSION ECONOMIQUE ET SOCIALE POUR L'ASIE OCCIDENTALE, RAPPORT SUR LA VINGT-NEUVIEME SESSION 13-15 DECEMBRE 2016 : CONSEIL ECONOMIQUE ET SOCIAL : DOCUMENTS OFFICIELS : 2016 : SUPPLEMENT NO. 21</subfield>
-    </datafield>
-    <datafield tag="246" ind1=" " ind2=" ">
-        <subfield code="a">اللجنة الاقتصادية والاجتماعية لغربي آسيا، تقرير الدورة التاسعة والعشرين، 13 - 15 كانون الاول/ديسمبر 2016 : المجلس الاقتصادي والاجتماعي، الوثائق الرسمية : 2016  الملحق رقم 21</subfield>
-    </datafield>
-    <datafield tag="269" ind1=" " ind2=" ">
-        <subfield code="a">20161230</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">REGIONAL COMMISSIONS</subfield>
-        <subfield code="0">(DHLAUTH)269969</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">WESTERN ASIA</subfield>
-        <subfield code="0">(DHLAUTH)275490</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">CONFERENCES</subfield>
-        <subfield code="0">(DHLAUTH)275758</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">SUSTAINABLE DEVELOPMENT</subfield>
-        <subfield code="0">(DHLAUTH)269920</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">SOCIAL JUSTICE</subfield>
-        <subfield code="0">(DHLAUTH)270080</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">PALESTINIANS</subfield>
-        <subfield code="0">(DHLAUTH)269084</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">MANAGEMENT</subfield>
-        <subfield code="0">(DHLAUTH)269660</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">GENDER MAINSTREAMING</subfield>
-        <subfield code="0">(DHLAUTH)493524</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">WORK PROGRAMME</subfield>
-        <subfield code="0">(DHLAUTH)275800</subfield>
-    </datafield>
-    <datafield tag="650" ind1=" " ind2=" ">
-        <subfield code="a">ARAB COUNTRIES</subfield>
-        <subfield code="0">(DHLAUTH)268705</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_22%2FE_2016_41-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_2016_41-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_22%2FE_2016_41-EN.pdf</subfield>
-        <subfield code="d">English</subfield>
-        <subfield code="n">E_2016_41-EN.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_22%2FE_2016_41-FR.pdf</subfield>
-        <subfield code="d">Français</subfield>
-        <subfield code="n">E_2016_41-FR.pdf</subfield>
     </datafield>
 </record>
 <record>
@@ -27350,11 +27216,6 @@
         <subfield code="d">العربية</subfield>
         <subfield code="n">E_ESCWA_HS_1993_3-AR.pdf</subfield>
     </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_2383%2FE_ESCWA_HS_1993_3-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_HS_1993_3-AR.pdf</subfield>
-    </datafield>
 </record>
 <record>
     <datafield tag="191" ind1=" " ind2=" ">
@@ -34036,11 +33897,6 @@
     </datafield>
     <datafield tag="FFT" ind1=" " ind2=" ">
         <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_2890%2FE_ESCWA_ID_88_5-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_ID_88_5-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_2891%2FE_ESCWA_ID_88_5-AR.pdf</subfield>
         <subfield code="d">العربية</subfield>
         <subfield code="n">E_ESCWA_ID_88_5-AR.pdf</subfield>
     </datafield>
@@ -51867,11 +51723,6 @@
         <subfield code="d">English</subfield>
         <subfield code="n">E_ESCWA_SD_1990_1-EN.pdf</subfield>
     </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4517%2FE_ESCWA_SD_1990_1-EN.pdf</subfield>
-        <subfield code="d">English</subfield>
-        <subfield code="n">E_ESCWA_SD_1990_1-EN.pdf</subfield>
-    </datafield>
 </record>
 <record>
     <datafield tag="191" ind1=" " ind2=" ">
@@ -54815,11 +54666,6 @@
     </datafield>
     <datafield tag="FFT" ind1=" " ind2=" ">
         <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4669%2FE_ESCWA_SD_2002_5-FR.pdf</subfield>
-        <subfield code="d">Français</subfield>
-        <subfield code="n">E_ESCWA_SD_2002_5-FR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4670%2FE_ESCWA_SD_2002_5-FR.pdf</subfield>
         <subfield code="d">Français</subfield>
         <subfield code="n">E_ESCWA_SD_2002_5-FR.pdf</subfield>
     </datafield>
@@ -60749,16 +60595,6 @@
         <subfield code="d">العربية</subfield>
         <subfield code="n">E_ESCWA_STAT_1995_13-AR.pdf</subfield>
     </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4996%2FE_ESCWA_STAT_1995_13-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_STAT_1995_13-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_4997%2FE_ESCWA_STAT_1995_13-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_STAT_1995_13-AR.pdf</subfield>
-    </datafield>
 </record>
 <record>
     <datafield tag="191" ind1=" " ind2=" ">
@@ -60836,16 +60672,6 @@
         <subfield code="d">العربية</subfield>
         <subfield code="n">E_ESCWA_STAT_1995_16-AR.pdf</subfield>
     </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5001%2FE_ESCWA_STAT_1995_16-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_STAT_1995_16-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5002%2FE_ESCWA_STAT_1995_16-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_STAT_1995_16-AR.pdf</subfield>
-    </datafield>
 </record>
 <record>
     <datafield tag="191" ind1=" " ind2=" ">
@@ -60879,16 +60705,6 @@
     </datafield>
     <datafield tag="FFT" ind1=" " ind2=" ">
         <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5003%2FE_ESCWA_STAT_1995_17-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_STAT_1995_17-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5004%2FE_ESCWA_STAT_1995_17-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_STAT_1995_17-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5005%2FE_ESCWA_STAT_1995_17-AR.pdf</subfield>
         <subfield code="d">العربية</subfield>
         <subfield code="n">E_ESCWA_STAT_1995_17-AR.pdf</subfield>
     </datafield>
@@ -60937,16 +60753,6 @@
     </datafield>
     <datafield tag="FFT" ind1=" " ind2=" ">
         <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5006%2FE_ESCWA_STAT_1995_18-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_STAT_1995_18-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5007%2FE_ESCWA_STAT_1995_18-AR.pdf</subfield>
-        <subfield code="d">العربية</subfield>
-        <subfield code="n">E_ESCWA_STAT_1995_18-AR.pdf</subfield>
-    </datafield>
-    <datafield tag="FFT" ind1=" " ind2=" ">
-        <subfield code="a">http://undhl-dgacm.s3.amazonaws.com/Drop%2FESCWA_special%2Ftemp_id_5008%2FE_ESCWA_STAT_1995_18-AR.pdf</subfield>
         <subfield code="d">العربية</subfield>
         <subfield code="n">E_ESCWA_STAT_1995_18-AR.pdf</subfield>
     </datafield>
