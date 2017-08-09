@@ -115,11 +115,12 @@ sub MAIN {
 	my $in_dls = IN::DLS->new(file => 'in_ods.tsv')->data;
 	my $s3 = S3->new(file => 'escwa_s3.txt')->data;
 	$opts->{tcodes} = TCODES->new(file => 'tcodes.tsv')->data;
+	open my $new_recs,'>:utf8','new_2.xml';
+	open my $update_recs,'>:utf8','update_2.xml';
+	open my $ods,'<:utf8','EECWAST';
 	
-	open my $new_recs,'>:utf8','new.xml';
-	open my $update_recs,'>:utf8','update.xml';
 	say {$_} '<collection>' for $new_recs,$update_recs;
-	open my $ods,'<:utf8','EESCWAST';
+	
 	$/ = "\x{C}";
 	my %seen;
 	my $c;
@@ -164,7 +165,7 @@ sub MAIN {
 			print {$update_recs} $record->to_xml;
 		}
 	}
-	say $c;
+	
 	say {$_} '</collection>' for $new_recs,$update_recs;
 }
 
