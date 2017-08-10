@@ -34,3 +34,4 @@
 
 * We neglected to add MARC fields 000 and 008 to new records. It's unclear what the ramifcations for this are.
 * If any of the records that were updated by this process change in Horizon, those Horizon records will be automatically exported as part of the daily Horizon export process, and overwrite the DLS record.
+* Some ad hoc quick fixes / adjustments that were necessary are not refelcted in this README for purposes of clarity
