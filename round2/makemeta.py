@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 from urllib.request import urlopen
 import ssl
 from auth import AUTHS
+from languages import resolve_lang
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -46,9 +47,9 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
 
     record = Record()
     if 'E/ESCWA' in this_sym:
-      record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['a',this_sym,'b','/'.join(this_sym.split('/')[0:2]) + '/']))
+      record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['0','972209','a',this_sym,'b','E/ESCWA/']))
     else:
-      record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['a',this_sym,'b',]))
+      record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['a',this_sym,]))
 
     # find the record from the ODS data
     ods_record = ''
@@ -66,9 +67,15 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
 
       # Now get the rest of the titles, which go in 246
       for lang in ['A','C','F','R','S']:
+        # There are cases where no English title exists, so we need something in 245, and whatever goes there gets removed from 246
         title = ods_record['Title' + lang]
         if len(title) > 0:
-          record.add_field(Field(tag = '246',indicators = [' ',' '],subfields = ['a',title,])) 
+          if len(title_e) < 1 and not record.__contains__('245'):
+            # This should just assign the first encountered title to 245, then the rest will go to 246
+            record.add_field(Field(tag='245',indicators=['1','0'],subfields=['a',title]))
+          else:
+            record.add_field(Field(tag = '246',indicators = ['3',' '],subfields = ['a',title,])) 
+
       
       # Get the Job Numbers for 029 and the language codes that go in 041
       LANGS = {'A':'ara','C':'chi','E':'eng','F':'fre','R':'rus','S':'spa','O':'ger'}
@@ -114,7 +121,8 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
       except botocore.exceptions.ClientError as e:
         next
       else:
-        record.add_field(Field(tag = 'FFT',indicators = [' ',' '],subfields = ['a',s3_base + this_fn,'d',lang,'n',this_sym.replace('/','_') + "-" + lang + ".pdf"]))
+        this_lang = resolve_lang(lang)
+        record.add_field(Field(tag = 'FFT',indicators = [' ',' '],subfields = ['a',s3_base + this_fn,'d',this_lang['orig'],'n',this_sym.replace('/','_') + "-" + lang + ".pdf"]))
 
     # 980 as a means of tracking the batch
     record.add_field(Field(tag='980',indicators=[' ',' '],subfields=['a','escwa20171010']))
