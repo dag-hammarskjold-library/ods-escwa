@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from pymarc import Record, Field, XMLWriter, TextWriter, marcxml
+from pymarc import Record, Field, XMLWriter, TextWriter, marcxml, MARCReader
 import boto3
 import botocore
 from tqdm import tqdm, trange
@@ -45,7 +45,7 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
     this_fn_base = 'escwa/files/' + this_sym.replace('/','_')
     this_fn = this_fn_base
 
-    record = Record()
+    record = Record(leader='00000nam a2200        4500')
     if 'E/ESCWA' in this_sym:
       record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['0','972209','a',this_sym,'b','E/ESCWA/']))
     else:
@@ -59,6 +59,8 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
       logging.debug(this_sym + " could not be found in ODS data.")
     else:
       logging.debug("Found " + this_sym)
+      
+
       #Subject => \&_650,
       # Get the English title
       title_e = ods_record['Title']
@@ -111,6 +113,28 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
           next
         else:
           record.add_field(Field(tag='650',indicators=['0','7'],subfields=['a',this_auth['label'],'0',this_auth['dhlauth']]))
+
+      # Try to make a proper 008, which has a fixed width of 40 characters; this depends on fields above
+      str_008 = [' '] * 40
+      dd,mm,yyyy = ods_record['PubDate'].split(' ')[0].split('/')
+      str_008[0:1] = list(yyyy[2:4])
+      str_008[2:3] = list(mm)
+      str_008[4:5] = list(dd)
+      str_008[6] = 's'
+      str_008[7:10] = list(yyyy)
+      #str_008[11:14] = ' '
+      str_008[15:17] = list('lbn')
+      #str_008[18:22] = ' '
+      str_008[23] = 'r'
+      #str_008[24:34] = ' '
+      if 'eng' in s041:
+        str_008[35:37] = list('eng')
+      else:
+        str_008[35:37] = list(s041[0:3])
+      #str_008[38] = ' '
+      str_008[39] = 'u'
+      #print(str_008)
+      record.add_field(Field(tag='008',data=''.join(str_008)))
           
 
     s3 = boto3.resource('s3')
