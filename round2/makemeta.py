@@ -115,7 +115,8 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
           record.add_field(Field(tag='650',indicators=['0','7'],subfields=['a',this_auth['label'],'0',this_auth['dhlauth']]))
 
       # Try to make a proper 008, which has a fixed width of 40 characters; this depends on fields above
-      str_008 = [' '] * 40
+      # The next line makes me grouchy. It's a workaround for something I'm not grasping.
+      str_008 = [' '] * 34
       dd,mm,yyyy = ods_record['PubDate'].split(' ')[0].split('/')
       str_008[0:1] = list(yyyy[2:4])
       str_008[2:3] = list(mm)
@@ -133,7 +134,8 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
         str_008[35:37] = list(s041[0:3])
       #str_008[38] = ' '
       str_008[39] = 'u'
-      #print(str_008)
+      print(str_008)
+      print(len(str_008))
       record.add_field(Field(tag='008',data=''.join(str_008)))
           
 
