@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <controlfield tag="001">1</controlfield>
+        <controlfield tag="000">01061nam\\2200361#\\4500</controlfield>
+        <controlfield tag="005">20170412211450.0</controlfield>
+        <controlfield tag="008">790101s1979\\\\che\\\\\r\\\\\\\\\\\eng\u</controlfield>
+        <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9290141484</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">C0000001</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DHL)5113</subfield>
+        </datafield>
+        <datafield tag="039" ind1=" " ind2=" ">
+            <subfield code="a">DHC</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">NNUN</subfield>
+            <subfield code="b">eng</subfield>
+        </datafield>
+        <datafield tag="041" ind1=" " ind2=" ">
+            <subfield code="a">eng</subfield>
+        </datafield>
+        <datafield tag="049" ind1=" " ind2=" ">
+            <subfield code="a">che</subfield>
+        </datafield>
+        <datafield tag="069" ind1=" " ind2=" ">
+            <subfield code="a">CBI</subfield>
+            <subfield code="b">04.14</subfield>
+        </datafield>
+        <datafield tag="089" ind1=" " ind2=" ">
+            <subfield code="a">Addresses, essays, etc.</subfield>
+            <subfield code="b">A01</subfield>
+        </datafield>
+        <datafield tag="089" ind1=" " ind2=" ">
+            <subfield code="a">Specialized Agencies</subfield>
+            <subfield code="b">C08</subfield>
+        </datafield>
+        <datafield tag="099" ind1=" " ind2=" ">
+            <subfield code="a">UNH</subfield>
+            <subfield code="b">DHU</subfield>
+            <subfield code="c">ILO/INST(02)/D22</subfield>
+            <subfield code="q">ILOINST02D22</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Manpower supply and utilisation in Ghana, Nigeria and Sierra Leone /</subfield>
+            <subfield code="c">edited by Ukandi G. Damachi and Kodwo Ewusi.</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Geneva :</subfield>
+            <subfield code="b">International Institute for Labour Studies,</subfield>
+            <subfield code="c">c1979.</subfield>
+        </datafield>
+        <datafield tag="269" ind1=" " ind2=" ">
+            <subfield code="a">1979</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">vii, 223 p.</subfield>
+        </datafield>
+        <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Bibliography: p. 212-222.</subfield>
+        </datafield>
+        <datafield tag="650" ind1="0" ind2="7">
+            <subfield code="0">1280815</subfield>
+            <subfield code="a">MANPOWER</subfield>
+        </datafield>
+        <datafield tag="651" ind1="0" ind2="7">
+            <subfield code="0">1282095</subfield>
+            <subfield code="a">GHANA</subfield>
+        </datafield>
+        <datafield tag="651" ind1="0" ind2="7">
+            <subfield code="0">1282112</subfield>
+            <subfield code="a">NIGERIA</subfield>
+        </datafield>
+        <datafield tag="651" ind1="0" ind2="7">
+            <subfield code="0">1282118</subfield>
+            <subfield code="a">SIERRA LEONE</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2="0">
+            <subfield code="0">928680</subfield>
+            <subfield code="a">Damachi, Ukandi Godwin (Ukandi G.)</subfield>
+        </datafield>
+        <datafield tag="700" ind1="1" ind2="0">
+            <subfield code="0">928681</subfield>
+            <subfield code="a">Ewusi, Kodwo.</subfield>
+        </datafield>
+        <datafield tag="710" ind1="2" ind2="0">
+            <subfield code="0">864705</subfield>
+            <subfield code="a">International Institute for Labour Studies</subfield>
+        </datafield>
+        <datafield tag="930" ind1=" " ind2=" ">
+            <subfield code="a">CATJAN80</subfield>
+        </datafield>
+        <datafield tag="930" ind1=" " ind2=" ">
+            <subfield code="a">UNS</subfield>
+        </datafield>
+        <datafield tag="955" ind1=" " ind2=" ">
+            <subfield code="a">08471100</subfield>
+        </datafield>
+        <datafield tag="980" ind1=" " ind2=" ">
+            <subfield code="a">BIB</subfield>
+        </datafield>
+        <datafield tag="989" ind1=" " ind2=" ">
+            <subfield code="a">Documents and Publications</subfield>
+            <subfield code="b">Publications</subfield>
+        </datafield>
+        <datafield tag="998" ind1=" " ind2=" ">
+            <subfield code="a">19961218190000</subfield>
+            <subfield code="c">20120323064800</subfield>
+            <subfield code="d">pnser</subfield>
+        </datafield>
+    </record>
+</collection>

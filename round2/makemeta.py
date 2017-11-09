@@ -29,7 +29,8 @@ for line in f:
   else:
     if len(sdf) > 0:
       for sym in sdf['ALLDS'].split(','):
-        sdfs[sym.replace(' ','')] = sdf
+        this_s = sym.replace('E/ESCWA/ID/1998/1','')
+        sdfs[this_s.replace(' ','')] = sdf
     sdf = {}
 f.close()
 
@@ -47,7 +48,11 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
 
     record = Record(leader='00000nam a2200        4500')
     if 'E/ESCWA' in this_sym:
-      record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['0','972209','a',this_sym,'b','E/ESCWA/']))
+      if 'E/ESCWA/ID/1998/1' in this_sym:
+        record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['0','972209','a',this_sym.replace('E/ESCWA/ID/1998/1','').replace(' ','').strip()]))
+        record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['0','972209','a','E/ESCWA/ID/1998/1']))
+      else:
+        record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['0','972209','a',this_sym,'b','E/ESCWA/']))
     else:
       record.add_field(Field(tag = '191', indicators=[' ',' '], subfields=['a',this_sym,]))
 
@@ -134,8 +139,8 @@ with tqdm(total=len(ns), unit='R', unit_scale=True) as pbar:
         str_008[35:37] = list(s041[0:3])
       #str_008[38] = ' '
       str_008[39] = 'u'
-      print(str_008)
-      print(len(str_008))
+      #print(str_008)
+      #print(len(str_008))
       record.add_field(Field(tag='008',data=''.join(str_008)))
           
 
